@@ -1,12 +1,14 @@
-# WeatherBoard
+# 🐍 WeatherBoard
 
 Dashboard which can get weather informations about city.
 
-### 📦 Dependencies installation
+### 📦 Installation
 
 ```
 $ pip3 install -r requirements.txt
 ```
+
+**>> When you have installed dependencies you must change 'api_key' value from ``weather_api/config.py``.**
 
 ### ❓ How to use ?
 
@@ -49,3 +51,5 @@ URL=https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=40.7127281&l
 
 ### Result :
 !["result_01"](https://i.imgur.com/ZCWqPJe.png)
+!["result_02"](https://i.imgur.com/P4bsF7l.png)
+!["result_03"](https://i.imgur.com/WPAPwQO.png)
