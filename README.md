@@ -28,7 +28,7 @@ Dash is running on http://127.0.0.1:8050/
 #### Debug Mode :
 
 ```
-$ python3 app.py
+$ python3 app.py --debug
 Dash is running on http://127.0.0.1:8050/
 
  * Serving Flask app 'my_dash.maindash' (lazy loading)
@@ -47,6 +47,19 @@ URL=https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=40.7127281&l
 3  New York 2022-02-19 03:04:08        Clear           clear sky  ...            -6.02      1018        43        6.17
 
 [4 rows x 10 columns]
+```
+
+#### Deploy Mode :
+
+```
+$ python3 app.py --deploy
+Dash is running on http://0.0.0.0:8050/
+
+ * Serving Flask app 'my_dash.maindash' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
 ```
 
 ### Result :
