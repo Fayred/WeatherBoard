@@ -1,4 +1,4 @@
-# WeatherBoard
+# WeatherBoard
 
 Dashboard which can get weather informations about city.
 
