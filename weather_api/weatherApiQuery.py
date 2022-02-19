@@ -7,6 +7,10 @@ from weather_api.config import api_key
 def weather_api_query(city: str, date: str, debug: bool = False) -> dict:
     # get lat and lon of city
     geocode = httpx.get(f"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={api_key}").json()
+    
+    if len(geocode) == 0:
+        raise Exception("Error: city doesn't exist in database.")
+    
     lat, lon = geocode[0]["lat"], geocode[0]["lon"]
 
     timestamp = math.floor(time.time())
