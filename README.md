@@ -2,11 +2,13 @@
 
 Dashboard which can get weather informations about city.
 
-### 📦 Dependencies installation
+### 📦 Installation
 
 ```
 $ pip3 install -r requirements.txt
 ```
+
+**>> When you have installed dependencies you must change 'api_key' value from ``weather_api/config.py``.**
 
 ### ❓ How to use ?
 
