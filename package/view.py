@@ -1,16 +1,18 @@
 from dash import dcc, html, Input, Output, State
 import plotly.graph_objects as go
+import os
 
 from my_dash.maindash import app
 from package.args import arguments
 from weather_api.weatherApiQuery import weather_api_query
+from img.icon import icon
 
 def make_layout():
     return html.Div(children=[
         html.Nav(children=[
             html.Div(children=[
                 html.Div(children=[
-                    html.Img(src="https://i.imgur.com/X5Ge0PN.png"),    
+                    html.Img(src=icon, alt="WeatherBoard"),    
                 ], className="navbar-item"),
             ], className="navbar-brand"),
 

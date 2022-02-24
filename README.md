@@ -1,14 +1,12 @@
-# 🐍 WeatherBoard
+# WeatherBoard
 
 Dashboard which can get weather informations about city.
 
-### 📦 Installation
+### 📦 Dependencies installation
 
 ```
 $ pip3 install -r requirements.txt
 ```
-
-**>> When you have installed dependencies you must change 'api_key' value from ``weather_api/config.py``.**
 
 ### ❓ How to use ?
 
@@ -28,7 +26,7 @@ Dash is running on http://127.0.0.1:8050/
 #### Debug Mode :
 
 ```
-$ python3 app.py --debug
+$ python3 app.py
 Dash is running on http://127.0.0.1:8050/
 
  * Serving Flask app 'my_dash.maindash' (lazy loading)
@@ -49,20 +47,5 @@ URL=https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=40.7127281&l
 [4 rows x 10 columns]
 ```
 
-#### Deploy Mode :
-
-```
-$ python3 app.py --deploy
-Dash is running on http://0.0.0.0:8050/
-
- * Serving Flask app 'my_dash.maindash' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: on
-```
-
 ### Result :
 !["result_01"](https://i.imgur.com/ZCWqPJe.png)
-!["result_02"](https://i.imgur.com/P4bsF7l.png)
-!["result_03"](https://i.imgur.com/WPAPwQO.png)
